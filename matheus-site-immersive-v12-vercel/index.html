@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Matheus Cavalcante</title>
+  <meta name="theme-color" content="#000000">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .container{max-width:72rem;margin:0 auto;padding-left:1rem;padding-right:1rem}
+    .safe-bottom{padding-bottom:calc(env(safe-area-inset-bottom) + 1rem)}
+    .wave svg{display:block;width:100%}
+    .touch-target{min-height:44px;min-width:44px}
+    img[loading="lazy"]{content-visibility:auto}
+  </style>
+
+  <meta name="description" content="Projeto sofisticado para casamentos de alto padrão, eventos corporativos e eventos exclusivos.">
+  <link rel="icon" href="assets/icon-512.png" type="image/png">
+  <meta property="og:title" content="Matheus Cavalcante — Projeto Sofisticado">
+  <meta property="og:description" content="Trio e banda para casamentos e eventos. Qualidade real de palco e curadoria de repertório.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-trio.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Matheus Cavalcante — Projeto Sofisticado">
+  <meta name="twitter:description" content="Trio e banda para casamentos e eventos.">
+  <meta name="twitter:image" content="assets/hero-trio.jpg">
+  <!-- GA4 (substitua G-2S3YLJF43Q pelo seu ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2S3YLJF43Q"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-2S3YLJF43Q');</script>
+  <!-- Meta Pixel (substitua 319335981257451 pelo seu) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','319335981257451'); fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=319335981257451&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matheus Cavalcante",
+    "jobTitle": "Cantor e instrumentista",
+    "url": "https://cantormatheuscavalcante.com.br/",
+    "sameAs": [
+      "https://www.instagram.com/maatheuscavalcante/",
+      "https://www.youtube.com/@cantormatheuscavalcante"
+    ]
+  }
+  </script>
+  <style>
+    /* microinterações */
+    .reveal {opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease;}
+    .reveal.in {opacity:1; transform:translateY(0);}
+    .btn {transition:transform .15s ease, box-shadow .2s ease;}
+    .btn:active {transform:scale(0.98);}
+    /* sticky cta (mobile) */
+    .cta-sticky {position:fixed; left:0; right:0; bottom:0; z-index:70; display:none;}
+    @media(max-width: 640px){ .cta-sticky{display:block;} }
+  </style>
+
+  <link rel="canonical" href="https://cantormatheuscavalcante.com.br/">
+  <meta property="og:url" content="https://cantormatheuscavalcante.com.br/">
+</head>
+<body class="bg-white text-black antialiased">
+  <!-- NAV sobreposto (sem botão) -->
+  <header class="absolute top-0 left-0 right-0 z-50"><div class="container py-4"></div></header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative min-h-[90vh]">
+    <picture class="absolute inset-0">
+      <source srcset="assets/hero-trio.webp" type="image/webp">
+      <img src="assets/hero-trio.jpg" alt="Matheus Cavalcante em apresentação" class="w-full h-full object-cover" loading="eager" fetchpriority="high">
+    </picture>
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative container pt-56 sm:pt-64 md:pt-72 pb-16 grid md:grid-cols-12 gap-6 text-white">
+      <div class="md:col-span-8">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.04] tracking-tight drop-shadow-sm">
+          Matheus Cavalcante
+        </h1>
+        <p class="mt-4 sm:mt-6 text-base sm:text-lg text-white/85 max-w-2xl">
+          Projeto sofisticado para casamentos de alto padrão, eventos corporativos e eventos exclusivos.
+        </p>
+        <div class="mt-8 grid grid-cols-1 sm:flex gap-3">
+          <a href="#contato" class="touch-target inline-flex items-center justify-center px-5 py-3 text-sm font-medium rounded-full bg-white text-black hover:bg-white/90">Solicitar orçamento</a>
+          <a href="#portfolio" class="touch-target inline-flex items-center justify-center px-5 py-3 text-sm font-medium rounded-full border border-white/40 text-white hover:bg-white/10">Ver portfólio</a>
+        </div>
+      </div>
+    </div>
+    <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#fff"/></svg></div>
+  </section>
+
+  <!-- EXPERIÊNCIA / DIFERENCIAIS -->
+  <section id="diferenciais" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <picture><source srcset="assets/bg-1.webp" type="image/webp"><img src="assets/bg-1.jpg" alt="Fundo em preto e branco de apresentação" class="w-full h-full object-cover" loading="lazy"></picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-white via-white/90 to-white"></div>
+    </div>
+    <div class="relative container py-16 sm:py-20 grid md:grid-cols-3 gap-5 sm:gap-6">
+      <div class="rounded-3xl border border-white/30 bg-white/70 backdrop-blur-md p-5">
+        <h3 class="text-lg sm:text-xl font-semibold">+10 de experiência</h3>
+        <p class="mt-2 text-neutral-700 text-sm sm:text-base">
+          Teve a honra de fazer a abertura do show da banda Roupa Nova para 2.000 pessoas, participou da inauguração de grandes empresas e está ativo no mercado de eventos refinados de alto padrão.
+        </p>
+      </div>
+      <div class="rounded-3xl border border-white/30 bg-white/70 backdrop-blur-md p-5">
+        <h3 class="text-lg sm:text-xl font-semibold">Execução 100% ao vivo</h3>
+        <p class="mt-2 text-neutral-700 text-sm sm:text-base">Qualidade real de palco. O público sente exatamente como será no seu evento.</p>
+      </div>
+      <div class="rounded-3xl border border-white/30 bg-white/70 backdrop-blur-md p-5">
+        <h3 class="text-lg sm:text-xl font-semibold">Personalização</h3>
+        <p class="mt-2 text-neutral-700 text-sm sm:text-base">Cerimonial com repertório pensado para cada casal e clima desejado. Jantar com dinâmica e volume ideais para conversas.</p>
+      </div>
+    </div>
+    <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#0a0a0a"/></svg></div>
+  </section>
+
+  <!-- FORMATOS -->
+  <section id="formatos" class="relative text-white" style="background:linear-gradient(180deg,#0a0a0a,#111827)">
+    <div class="container py-16 sm:py-20 reveal">
+      <div class="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Formatos de apresentação</h2>
+          <p class="text-white/70 text-sm sm:text-base">Escolha o formato que melhor se encaixa no seu evento.</p>
+        </div>
+        <div class="w-full sm:w-56">
+          <label class="block mb-2 text-sm text-white/80">Formato preferido</label>
+          <select id="formatSelect" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 text-sm backdrop-blur">
+            <option value="solo">Solo</option>
+            <option value="trio" selected>Trio (teclado + sax)</option>
+            <option value="banda">Banda completa</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 sm:gap-6" id="formatCards">
+        <div class="rounded-3xl bg-white/5 border border-white/20 backdrop-blur p-5" data-format="solo"><h3 class="text-white text-lg font-semibold">Solo</h3><p class="mt-2 text-white/80 text-sm sm:text-base">Voz, violão, cajon, meia lua e gaita de boca tocados simultaneamente. Compacto e sofisticado.</p><p class="mt-2 text-white/80 text-sm sm:text-base">Ideal para eventos intimistas de até 50 convidados.</p></div>
+        <div class="rounded-3xl bg-white/5 border border-white/20 backdrop-blur p-5 ring-2 ring-white/60" data-format="trio"><h3 class="text-white text-lg font-semibold">Trio</h3><p class="mt-2 text-white/80 text-sm sm:text-base">Esse formato é composto por um tecladista, um saxofonista e o artista Matheus Cavalcante. Esse é o nosso carro-chefe, perfeito para cerimoniais, jantares e aberturas. Uma apresentação única de altíssima qualidade.</p></div>
+        <div class="rounded-3xl bg-white/5 border border-white/20 backdrop-blur p-5" data-format="banda"><h3 class="text-white text-lg font-semibold">Banda completa</h3><p class="mt-2 text-white/80 text-sm sm:text-base">Formação completa com bateria, baixo, guitarra, teclado, saxofone e o cantor Matheus Cavalcante. Ideal para palcos maiores e eventos de grande porte com públicos grandes. Rider técnico sob demanda.</p></div>
+      </div>
+    </div>
+    <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#000"/></svg></div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <picture><source srcset="assets/bg-2.webp" type="image/webp"><img src="assets/bg-2.jpg" class="w-full h-full object-cover" alt="Fundo em P&B" loading="lazy"></picture>
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    <div class="relative container py-16 sm:py-20 text-white reveal">
+      <div class="mb-6 sm:mb-8">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Portfólio em vídeo</h2>
+        <p class="text-white/75 text-sm sm:text-base">Seleção de registros ao vivo — som 100% captado em apresentação.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/12VjUXyy_QQJzYFWB7Gyra3oBSjiSmS6R/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Resumo de eventos</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/1EzuK540sVf9g7SpfgQxeV6HlCp45cbkZ/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Aniversário 30 anos — Wenceslau Braz</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/1cHxD4bmUfu8bjWEnukt-_K6z8T7Qrf4z/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Inauguração Sportbay ProTork — Siqueira Campos</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/1XyPS5DY391B0ATCFLQv6CdZQG5uijyzG/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Inauguração Hospital San Michelle — Pato Branco</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/1h7dSdzZ2W18PunOq7OiWVp7zvVDbm_7U/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Evento Dia dos Namorados — Wenceslau Braz</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/20 bg-white/5 backdrop-blur">
+          <div class="aspect-video"><iframe class="w-full h-full" src="https://drive.google.com/file/d/1_rDZbfPxjOneT6Z0aiy7VmMo30snPxfy/preview" allow="autoplay" allowfullscreen></iframe></div>
+          <div class="p-3 text-sm text-white/80">Casamento — Carlópolis, PR</div>
+        </div>
+      </div>
+    </div>
+    <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#000"/></svg></div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <picture><source srcset="assets/bg-3.webp" type="image/webp"><img src="assets/bg-3.jpg" class="w-full h-full object-cover" alt="Fundo de contato em P&B" loading="lazy"></picture>
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    <div class="relative container py-16 sm:py-20 text-white reveal">
+      <div class="mb-6 sm:mb-8 text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Solicite um orçamento</h2>
+        <p class="text-white/75 text-sm sm:text-base">Preencha e abriremos o WhatsApp com todas as informações.</p>
+      </div>
+      <div class="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-md">
+        <div class="p-5 sm:p-8 md:p-10">
+          <form id="orcamentoForm" class="grid md:grid-cols-2 gap-5 sm:gap-6">
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Seu nome</label>
+              <input name="nome" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="Nome completo" required>
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">WhatsApp</label>
+              <input name="zap" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Email</label>
+              <input type="email" name="email" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="seu@email.com">
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Tipo de evento</label>
+              <select name="tipo" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 text-sm backdrop-blur">
+                <option>Cerimonial</option>
+                <option>Cerimonial + jantar</option>
+                <option selected>Jantar</option>
+                <option>Corporativo</option>
+                <option>Teatro/Prefeitura</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Data do evento</label>
+              <input type="date" name="data" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3">
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Cidade/Estado</label>
+              <input name="cidade" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="Cidade - UF">
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Horário de início</label>
+              <input name="horario" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="Ex.: 19h">
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Formato desejado</label>
+              <select name="formato" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 text-sm backdrop-blur">
+                <option>Solo</option>
+                <option selected>Trio</option>
+                <option>Banda completa</option>
+                <option>Sugestão após avaliação</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Estrutura de som/luz do local</label>
+              <select name="estrutura" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 text-sm backdrop-blur">
+                <option>O local fornece</option>
+                <option selected>Precisamos levar</option>
+                <option>Não sei informar</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Número de convidados</label>
+              <input name="convidados" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 placeholder:text-white/60" placeholder="Ex.: 150">
+            </div>
+            <div class="md:col-span-2 space-y-2">
+              <label class="text-white/90 text-sm sm:text-base">Preferências de repertório, canções do cerimonial ou dúvidas sobre o nosso trabalho</label>
+              <textarea name="repertorio" class="w-full rounded-xl bg-white/10 border border-white/30 text-white px-3 py-3 min-h-[96px] placeholder:text-white/60" placeholder="Conte o clima desejado, canções especiais e qualquer dúvida."></textarea>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:flex items-center justify-between gap-4 safe-bottom">
+              <button type="submit" class="touch-target inline-flex items-center justify-center px-5 py-3 text-sm font-medium rounded-full border border-white/40 text-white hover:bg-white/10">Enviar formulário</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-neutral-200">
+    <div class="container py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
+      <p>© <span id="year"></span> Matheus Cavalcante. Todos os direitos reservados.</p>
+      <p>Layout P&B • Tipografia elegante • Botões minimalistas</p>
+    </div>
+  
+  <!-- PROVAS SOCIAIS & REDES -->
+  <section id="provas" class="relative bg-white">
+    <div class="container py-16 sm:py-20 reveal">
+      <div class="mb-8 text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">O que estão falando</h2>
+        <p class="text-neutral-600 text-sm sm:text-base">Algumas impressões de clientes e parceiros.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 sm:gap-6">
+        <div class="rounded-3xl border border-neutral-200 bg-white p-5">
+          <p class="text-neutral-700 text-sm sm:text-base">“Atmosfera impecável para o jantar, repertório de extremo bom gosto.”</p>
+          <p class="mt-3 text-xs text-neutral-500">— Cliente de casamento</p>
+        </div>
+        <div class="rounded-3xl border border-neutral-200 bg-white p-5">
+          <p class="text-neutral-700 text-sm sm:text-base">“Profissionalismo do início ao fim — fácil de trabalhar e pontual.”</p>
+          <p class="mt-3 text-xs text-neutral-500">— Produtora de eventos</p>
+        </div>
+        <div class="rounded-3xl border border-neutral-200 bg-white p-5">
+          <p class="text-neutral-700 text-sm sm:text-base">“O sax e o teclado com o Matheus fazem toda a diferença no clima.”</p>
+          <p class="mt-3 text-xs text-neutral-500">— Noivos</p>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <h3 class="text-lg font-semibold">Acompanhe nas redes</h3>
+        <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://www.instagram.com/maatheuscavalcante/" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full border border-neutral-300 bg-white hover:bg-neutral-50">Instagram</a>
+          <a href="https://www.youtube.com/@cantormatheuscavalcante" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full border border-neutral-300 bg-white hover:bg-neutral-50">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</footer>
+
+  <div class="cta-sticky bg-black/90 text-white p-3 flex items-center justify-center">
+  <a href="#contato" class="btn inline-flex items-center justify-center px-5 py-3 text-sm font-medium rounded-full bg-white text-black hover:bg-white/90">Solicitar orçamento</a>
+</div>
+<script>
+  const WHATSAPP = "5543998717316";
+  const WA_DEFAULT = "Olá, Matheus! Vim pelo site e quero solicitar um orçamento.";
+  // waFloat removido a pedido
+
+  // Enviar dados preenchidos via WhatsApp no submit + modal de sucesso
+  const form = document.getElementById('orcamentoForm');
+  function buildResumo(fd){
+    return `Olá, Matheus!
+
+Quero um orçamento.
+` +
+      `Nome: ${fd.get('nome')||''}
+` +
+      `WhatsApp: ${fd.get('zap')||''}
+` +
+      `Email: ${fd.get('email')||''}
+` +
+      `Tipo de evento: ${fd.get('tipo')||''}
+` +
+      `Data: ${fd.get('data')||'a definir'}
+` +
+      `Cidade/UF: ${fd.get('cidade')||''}
+` +
+      `Horário de início: ${fd.get('horario')||''}
+` +
+      `Formato desejado: ${fd.get('formato')||''}
+` +
+      `Estrutura som/luz: ${fd.get('estrutura')||''}
+` +
+      `Convidados: ${fd.get('convidados')||''}
+` +
+      `Preferências/Repertório: ${fd.get('repertorio')||''}`;
+  }
+  if(form){
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = new FormData(form);
+      const texto = buildResumo(data);
+      const href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
+      // Abre WhatsApp com o resumo
+      window.open(href, "_blank");
+      // E-mail opcional como fallback
+      const subject = encodeURIComponent("Orçamento — Site Matheus Cavalcante");
+      const body = encodeURIComponent(texto);
+      setTimeout(()=>window.open(`mailto:contato@matheuscavalcante.com?subject=${subject}&body=${body}`, "_blank"), 300);
+      trackLead();
+      // Mostra modal de sucesso
+      const modal = document.getElementById('successModal');
+      const close = document.getElementById('closeModal');
+      if(modal){ modal.classList.remove('hidden'); modal.classList.add('flex'); }
+      if(close){ close.onclick = ()=> modal.classList.add('hidden'); }
+    });
+  }
+
+  
+  // Animações ao rolar
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+    // Track Lead no submit (Meta Pixel e GA4)
+  function trackLead(){
+    try{ if(window.fbq) fbq('track','Lead'); }catch(e){}
+    try{ if(window.gtag) gtag('event','generate_lead'); }catch(e){};
+  }
+
+  // Destaque em formatos
+  const select = document.getElementById('formatSelect');
+  const cards = document.querySelectorAll('#formatCards [data-format]');
+  function updateHighlight(){
+    cards.forEach(c=>c.classList.remove('ring-2','ring-white/60'));
+    const active = document.querySelector(`#formatCards [data-format="${select.value}"]`);
+    if(active) active.classList.add('ring-2','ring-white/60');
+  }
+  if(select){ select.addEventListener('change', updateHighlight); }
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+  <!-- Modal de sucesso -->
+  <div id="successModal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/70">
+    <div class="max-w-md w-full rounded-2xl bg-white p-6 text-center">
+      <h3 class="text-lg font-semibold">Formulário enviado!</h3>
+      <p class="mt-2 text-sm text-neutral-600">Muito obrigado pelas informações, nossa equipe entrará em contato o mais rápido possível pelo WhatsApp. Obrigado pela preferência e parabéns por escolher nosso trabalho.</p>
+      <button id="closeModal" class="mt-5 inline-flex items-center justify-center px-5 py-3 text-sm font-medium rounded-full bg-black text-white hover:opacity-90">Fechar</button>
+    </div>
+  </div>
+
+</body>
+</html>
