@@ -79,26 +79,17 @@
     <div class="wave -mb-1"><svg preserveAspectRatio="none" viewBox="0 0 1440 200"><path d="M0,0 C240,120 480,180 720,180 C960,180 1200,120 1440,0 L1440,200 L0,200 Z" fill="#fff"/></svg></div>
   </section>
 
-  <!-- DESTAQUES (segunda página) -->
-  <section class="relative bg-white text-black">
-    <div class="container py-16 sm:py-20 reveal">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.09 6.26H20l-5.17 3.76L16.91 18 12 14.77 7.09 18l2.08-5.98L4 8.26h5.91L12 2z"/></svg></div>
-          <h3 class="text-xl font-semibold">+10 anos de experiência</h3>
-          <p class="mt-2 text-neutral-800">Teve a honra de fazer a abertura do show da banda roupa nova para 2.000 pessoas, participou da inauguração de grandes empreendimentos e está ativo no mercado de eventos exclusivos e de alto padrão.</p>
-        </div>
-        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2v11.5a3.5 3.5 0 1 0 2 3.162V6h3V2H9z"/></svg></div>
-          <h3 class="text-xl font-semibold">Execução 100% ao vivo de altíssima qualidade</h3>
-          <p class="mt-2 text-neutral-800">Qualidade real de palco, apresentação com músicos extremamente profissionais</p>
-        </div>
-        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h10v2H4V6zm0 5h16v2H4v-2zm0 5h12v2H4v-2z"/></svg></div>
-          <h3 class="text-xl font-semibold">Personalização</h3>
-          <p class="mt-2 text-neutral-800">Cerimonial personalizado para cada casal ter o clima e emoção desejada. Jantar com repertório dinâmico com o volume ideal para ser agradável.</p>
-        </div>
-      </div>
+  <!-- PORTFÓLIO (cards -> modal) -->
+  <section id="portfolio" class="relative min-h-[60vh] overflow-hidden">
+    <picture class="absolute inset-0">
+      <source srcset="assets/bg-1.webp" type="image/webp">
+      <img src="assets/bg-1.jpg" class="w-full h-full object-cover" alt="Fundo do portfólio em P&B" loading="lazy">
+    </picture>
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative container py-16 sm:py-20 reveal">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center">Portfólio em vídeo</h2>
+      <p class="mt-2 text-center text-white/80 text-sm sm:text-base">Assista aos melhores momentos — clique em um vídeo.</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6" id="videoGrid"></div>
     </div>
     <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#0a0a0a"/></svg></div>
   </section>
@@ -127,21 +118,30 @@
     </div>
     <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#fff"/></svg></div>
   </section>
-
-  <!-- PORTFÓLIO (cards -> modal) -->
-  <section id="portfolio" class="relative min-h-[60vh] overflow-hidden">
-    <picture class="absolute inset-0">
-      <source srcset="assets/bg-1.webp" type="image/webp">
-      <img src="assets/bg-1.jpg" class="w-full h-full object-cover" alt="Fundo do portfólio em P&B" loading="lazy">
-    </picture>
-    <div class="absolute inset-0 bg-black/70"></div>
-    <div class="relative container py-16 sm:py-20 reveal">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center">Portfólio em vídeo</h2>
-      <p class="mt-2 text-center text-white/80 text-sm sm:text-base">Assista aos melhores momentos — clique em um vídeo.</p>
-      <div class="mt-8 grid md:grid-cols-2 gap-6" id="videoGrid"></div>
+  <!-- DESTAQUES (segunda página) -->
+  <section class="relative bg-white text-black">
+    <div class="container py-16 sm:py-20 reveal">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
+          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.09 6.26H20l-5.17 3.76L16.91 18 12 14.77 7.09 18l2.08-5.98L4 8.26h5.91L12 2z"/></svg></div>
+          <h3 class="text-xl font-semibold">+10 anos de experiência</h3>
+          <p class="mt-2 text-neutral-800">Teve a honra de fazer a abertura do show da banda roupa nova para 2.000 pessoas, participou da inauguração de grandes empreendimentos e está ativo no mercado de eventos exclusivos e de alto padrão.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
+          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2v11.5a3.5 3.5 0 1 0 2 3.162V6h3V2H9z"/></svg></div>
+          <h3 class="text-xl font-semibold">Execução 100% ao vivo de altíssima qualidade</h3>
+          <p class="mt-2 text-neutral-800">Qualidade real de palco, apresentação com músicos extremamente profissionais</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
+          <div class="mb-2 opacity-80"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h10v2H4V6zm0 5h16v2H4v-2zm0 5h12v2H4v-2z"/></svg></div>
+          <h3 class="text-xl font-semibold">Personalização</h3>
+          <p class="mt-2 text-neutral-800">Cerimonial personalizado para cada casal ter o clima e emoção desejada. Jantar com repertório dinâmico com o volume ideal para ser agradável.</p>
+        </div>
+      </div>
     </div>
     <div class="wave"><svg preserveAspectRatio="none" viewBox="0 0 1440 120"><path d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z" fill="#0a0a0a"/></svg></div>
   </section>
+
   <div id="videoModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center p-4 z-50">
     <div class="bg-black rounded-2xl w-full max-w-4xl">
       <div class="flex justify-between items-center px-4 pt-4">
@@ -292,12 +292,12 @@
 
     // Vídeos (cards -> modal) com thumbs do Drive e fallback local
     const videos = [
-      { "title":"Resumo de eventos","id":"12VjUXyy_QQJzYFWB7Gyra3oBSjiSmS6R" },
-      { "title":"Aniversário 30 anos — Wenceslau Braz","id":"1EzuK540sVf9g7SpfgQxeV6HlCp45cbkZ" },
-      { "title":"Inauguração Sportbay ProTork — Siqueira Campos","id":"1cHxD4bmUfu8bjWEnukt-_K6z8T7Qrf4z" },
-      { "title":"Inauguração Hospital San Michelle — Pato Branco","id":"16U1EVxxXWc6d6ZP5ZDGUUiQMEFxJZ0k9" },
-      { "title":"Dia dos Namorados — Wenceslau Braz","id":"1h7dSdzZ2W18PunOq7OiWVp7zvVDbm_7U" },
-      { "title":"Casamento em Carlópolis, PR","id":"16U1EVxxXWc6d6ZP5ZDGUUiQMEFxJZ0k9" },
+      { "title":"Resumo de eventos","id":"Po177Q37Y3Q" },
+      { "title":"Aniversário 30 anos — Wenceslau Braz","id":"fwa0atGoiCA" },
+      { "title":"Inauguração Sportbay ProTork — Siqueira Campos","id":"aK-ZME2t0Wo" },
+      { "title":"Inauguração Hospital San Michelle — Pato Branco","id":"lNQ7oSJ0z6I" },
+      { "title":"Dia dos Namorados — Wenceslau Braz","id":"lcPcAf8Nj9c" },
+      { "title":"Casamento em Carlópolis, PR","id":"VsFhJub70JQ" },
     ];
     const grid = document.getElementById('videoGrid');
     const modal = document.getElementById('videoModal');
@@ -308,7 +308,7 @@
         const b=document.createElement('button');
         b.className='group ratio rounded-xl overflow-hidden bg-black/40 border border-white/10 relative text-left';
         b.setAttribute('aria-label','Abrir vídeo: '+v.title);
-        const thumb = `https://drive.google.com/thumbnail?id=${v.id}&sz=w1200`;
+        const thumb = `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`;
         const fallback = `assets/thumb-${idx+1}.jpg`;
         b.innerHTML=`
           <img src="${thumb}" alt="${v.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='${fallback}'">
@@ -319,7 +319,7 @@
           <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
             <p class="text-sm sm:text-base text-white font-medium">${v.title}</p>
           </div>`;
-        b.addEventListener('click',()=>{ titleEl.textContent=v.title; frame.src=`https://drive.google.com/file/d/${v.id}/preview`; modal.classList.remove('hidden'); modal.classList.add('flex'); });
+        b.addEventListener('click',()=>{ titleEl.textContent=v.title; frame.src=`https://www.youtube.com/embed/${v.id}?autoplay=1`; modal.classList.remove('hidden'); modal.classList.add('flex'); });
         grid.appendChild(b);
       });
     }
