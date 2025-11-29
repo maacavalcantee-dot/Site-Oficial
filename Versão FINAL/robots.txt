@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cantormatheuscavalcante.com.br/sitemap.xml
